@@ -1,0 +1,29 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026, The Authors
+
+The author-generated numerical and diagnostic data identified below are
+licensed under the Creative Commons Attribution 4.0 International License:
+
+- paper/figure_data/
+- data/diagnostics/
+- data/hamiltonian_manifest.csv
+- benchmark_cases/fcidump/
+
+You may share and adapt this material for any purpose, including commercial
+use, provided that you give appropriate credit, provide a link to the license,
+indicate whether changes were made, and do not imply endorsement by the
+authors.
+
+The complete license terms are available at:
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+This license applies only to material for which the authors hold the relevant
+rights. Third-party molecular Hamiltonians are not redistributed by this
+repository and are not covered by this license. Their sources, checksums, and
+upstream licensing information are recorded in data/hamiltonian_manifest.csv.
+
+Suggested attribution:
+
+  NNQS Residual Energy Corrections, The Authors (2026), accompanying article
+  and archived software/data release, licensed under CC BY 4.0.

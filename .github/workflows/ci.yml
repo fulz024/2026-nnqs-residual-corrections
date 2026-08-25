@@ -1,0 +1,26 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install dependencies
+        run: python -m pip install -e ".[test,figures,build]"
+      - name: Build determinant kernels
+        run: |
+          cmake -S cpp_lib -B cpp_lib/build -DCMAKE_BUILD_TYPE=Release
+          cmake --build cpp_lib/build -j 2
+      - name: Run regression tests
+        run: python -m pytest -q
+      - name: Render paper figures
+        run: python paper/figures/make_paper_figures.py
+

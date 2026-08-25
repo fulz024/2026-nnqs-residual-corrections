@@ -1,0 +1,4 @@
+system,label,eta_ac,gap_mha,r_ds,eta_2st_real,eta_2st_imag,pt2_share
+h2o_sto3g,H2O,,,1.754,,,
+n2_sto3g,N2,-0.6750,0.829,0.778,-0.674243,0.000122,0.0000632
+lif_sto3g,LiF,-0.6375,8.356,0.616,-0.631770,0.000287,0.00802

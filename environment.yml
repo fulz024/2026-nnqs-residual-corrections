@@ -1,0 +1,13 @@
+name: nnqs-residual
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - cmake>=3.24
+  - ninja
+  - pybind11>=2.11
+  - numpy>=1.24
+  - pytorch>=2.4
+  - pandas>=2.0
+  - matplotlib>=3.8
+  - pytest>=8

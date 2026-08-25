@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nnqs-residual-energy-corrections"
+version = "0.2.0"
+description = "Restricted energy, PT2, rPT2, and diagonal BW reports on frozen NNQS supports"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "torch>=2.4"]
+classifiers = [
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.optional-dependencies]
+build = ["cmake>=3.24", "ninja>=1.11", "pybind11>=2.11"]
+figures = ["matplotlib>=3.8", "pandas>=2.0"]
+test = ["pytest>=8"]
+hamiltonians = ["pyscf>=2.11"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["residual_energy*", "cpp_lib*"]
+namespaces = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"

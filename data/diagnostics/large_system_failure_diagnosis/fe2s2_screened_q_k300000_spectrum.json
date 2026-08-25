@@ -1,0 +1,41 @@
+{
+  "augmented": {
+    "largest_reference_overlap_root": {
+      "index": 2
+    },
+    "roots": [
+      {
+        "index": 0,
+        "energy_error_mha": 162.53948134381346
+      },
+      {
+        "index": 1,
+        "energy_error_mha": 164.57307883318606
+      },
+      {
+        "index": 2,
+        "energy_error_mha": 165.92689715255915
+      },
+      {
+        "index": 3,
+        "energy_error_mha": 178.94237378489208
+      },
+      {
+        "index": 4,
+        "energy_error_mha": 184.25769412060333
+      },
+      {
+        "index": 5,
+        "energy_error_mha": 191.7140541178668
+      },
+      {
+        "index": 6,
+        "energy_error_mha": 195.10562871985826
+      },
+      {
+        "index": 7,
+        "energy_error_mha": 195.74702167362545
+      }
+    ]
+  }
+}

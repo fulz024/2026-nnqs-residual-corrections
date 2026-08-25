@@ -1,0 +1,11 @@
+include README.md
+include LICENSE
+include DATA_LICENSE
+recursive-include cpp_lib *.cpp *.hpp CMakeLists.txt
+recursive-include docs *.md
+recursive-include benchmark_cases *.FCIDUMP *.py
+recursive-include data *.csv *.json *.md
+recursive-include paper *.py *.csv *.json *.md
+recursive-include scripts *.py
+recursive-include verification *.py
+prune paper/figures/generated
